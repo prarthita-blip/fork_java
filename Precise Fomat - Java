@@ -1,0 +1,16 @@
+https://practice.geeksforgeeks.org/problems/precise-fomat-java/1/?track=module-1-basics-and-control-structures-java&batchId=114
+
+
+class Geeks{
+    
+    static void printInFormat(float a, float b){
+        float result = a/b;
+        
+        
+        // Your code here to print upto 3 decimal places
+        System.out.print(a/b + " ");
+        System.out.printf("%.3f", a/b);
+        
+    }    
+    
+}
