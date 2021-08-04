@@ -1,0 +1,20 @@
+https://practice.geeksforgeeks.org/problems/count-odd-even-java/1/?track=module-2-arrays-and-strings-java&batchId=114
+
+
+class Geeks {
+    static void countOddEven(int a[], int n) {
+
+        // Your code here
+        int odd=0;
+        int even=0;
+        for (int i:a)
+        {
+            if (i%2==0)
+            even++;
+            else
+            odd++;
+        }
+        
+        System.out.print(odd+" "+even);
+    }
+}
