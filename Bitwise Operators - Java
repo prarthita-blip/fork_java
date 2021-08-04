@@ -1,0 +1,25 @@
+https://practice.geeksforgeeks.org/problems/bitwise-operators-java/1/?track=module-1-basics-and-control-structures-java&batchId=114
+
+
+class Geeks {
+    static void bitWiseOp(int a, int b, int c) {
+
+        // Your code here
+        int d, e, f, g;
+        
+        d = a ^ a;
+        System.out.println(d);
+        
+        e = c ^ b;
+        System.out.println(e);
+        
+        f = a & b;
+        System.out.println(f);
+        
+        g = c | (a ^ a);
+        System.out.println(g);
+        
+        e = ~e;
+        System.out.println(e);
+    }
+}
