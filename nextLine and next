@@ -1,0 +1,23 @@
+https://practice.geeksforgeeks.org/problems/nextline-and-next/1/?track=module-1-basics-and-control-structures-java&batchId=114
+
+
+class Geeks {
+	static void getInput () {
+		
+	    Scanner sc = new Scanner(System.in);
+	    int t=sc.nextInt(); //Taking the number of testcases
+	    while(t-->0)
+	    {
+    		
+    	    
+    	    //Your code here
+    	    int a = sc.nextInt();
+            String s = sc.next();
+            s += sc.nextLine();
+    
+    		System.out.println(a);
+    		System.out.println(s);
+	    }
+	
+	}
+}
