@@ -1,0 +1,24 @@
+https://practice.geeksforgeeks.org/problems/step-by-step-condition-java/1/?track=module-1-basics-and-control-structures-java&batchId=114#
+
+
+class Geeks {
+	 static void isDivisibleByPrime (int n) 
+	 {
+             //Your code here
+       if(n % 11 == 0)
+        {
+            System.out.println("Eleven");
+        }
+        else if(n % 3 == 0)
+        {
+            System.out.println("Three");
+        }
+        else if(n % 2 == 0)
+        {
+            System.out.println("Two");
+        }
+        else
+        {
+            System.out.println("-1");
+        }
+	 }
