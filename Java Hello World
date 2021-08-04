@@ -1,0 +1,9 @@
+https://practice.geeksforgeeks.org/problems/java-hello-world4004/1/?track=module-1-basics-and-control-structures-java&batchId=114
+
+
+class Solution{
+    static void printHelloWorld(){
+        // code here
+        System.out.println("Hello World");
+    }
+}
