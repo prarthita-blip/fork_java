@@ -1,0 +1,31 @@
+https://practice.geeksforgeeks.org/problems/predict-the-column-java/1/?track=module-2-arrays-and-strings-java&batchId=114
+
+
+class Geeks{
+    
+    static int columnWithMaxZero(int a[][],int n){
+        int count = 0;
+        int size = n;
+        int max = 0;
+        int index = 0;
+        int l = 0;
+        int j = 0;
+        
+        while(l < size) {
+            for(int i = 0; i < n; i++) {
+                if(a[i][j] == 0) {
+                    count++;
+                }
+            }
+            if(max < count) {
+                index = l;
+                max = count;
+            }
+            count = 0;
+            j++;
+            l++;
+        }
+        
+        return index;
+    }
+}
