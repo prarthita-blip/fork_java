@@ -1,0 +1,26 @@
+https://practice.geeksforgeeks.org/problems/almost-equal-java/1/?track=module-2-arrays-and-strings-java&batchId=114#
+
+
+class Geeks{
+    
+    static int coutChars(String s1, String s2)
+    {
+        
+       //Your code here
+int sum = 0;
+int[] ascii = new int[26];
+for (char ch: s1.toCharArray()) {
+int index = (int)(ch) - 97;
+ascii[index]++;
+}
+for (char ch: s2.toCharArray()) {
+int index = (int)(ch) - 97;
+ascii[index]--;
+}
+for (int val: ascii) {
+sum += Math.abs(val);
+}
+return sum;
+
+    }
+}
