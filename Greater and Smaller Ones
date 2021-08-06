@@ -1,0 +1,54 @@
+https://practice.geeksforgeeks.org/problems/greater-and-smaller-ones/1/?track=module-5-sets-and-map-java&batchId=114
+
+
+class Geeks
+{
+    // Function to find elements greater than or equal to K
+    public static void greaterKSorted(int arr[], int k)
+    {
+       
+       HashSet<Integer> hs = new HashSet<Integer>();
+       for(int i=0;i<arr.length;i++){
+           int v=arr[i];
+           hs.add(v);
+                  }
+
+       List<Integer> list = new ArrayList<Integer>(hs);
+       Collections.sort(list); 
+        int count=0;
+        for(int i=0;i<list.size();i++){
+            if(list.get(i)>=k){
+                System.out.print(list.get(i)+" ");
+                count++;
+            }
+        }
+        if (count==0){
+            System.out.print("-1");
+        }
+        
+    }
+    
+    // Function to find element less than K
+    public static void smallerKSorted(int arr[], int k)
+    {
+       HashSet<Integer> hs = new HashSet<Integer>();
+       for(int i=0;i<arr.length;i++){
+           int v=arr[i];
+           hs.add(v);
+                  }
+      
+       List<Integer> li = new ArrayList<Integer>(hs);
+       Collections.sort(li);
+        int count=0;
+        for(int i=0;i<li.size();i++){
+            if(li.get(i)<k){
+                System.out.print(li.get(i)+" ");
+                count++;
+            }
+        }
+        if (count==0){
+            System.out.print("-1");
+        }
+        
+    }
+}
