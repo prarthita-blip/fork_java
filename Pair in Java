@@ -1,0 +1,26 @@
+https://practice.geeksforgeeks.org/problems/pair-in-java/1/?track=module-3-classes%20and-biginteger-java&batchId=114#
+
+
+class custom_Compare{
+    
+    // Compare function
+    static void sortPairs(Pair arr[], int N){
+        
+        // Your code here
+        Arrays.sort(arr , new Comparator<Pair>()
+            {
+                @Override
+                public int compare(Pair p1, Pair p2)
+                {
+                    return p1.x - p2.x;
+                }
+            }
+        );
+        
+        //printing the x,y Pairs
+        for(int i = 0;i<N;i++){
+            System.out.print(arr[i].x + " " + arr[i].y + " ");
+        }
+        System.out.println();
+    }
+}
