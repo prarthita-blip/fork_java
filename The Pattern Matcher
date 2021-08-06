@@ -1,0 +1,26 @@
+https://practice.geeksforgeeks.org/problems/the-pattern-matcher-java/1/?track=module-2-arrays-and-strings-java&batchId=114
+
+
+class Geeks{
+    
+    static void follPatt(String s)
+    {
+        
+        //Your code here
+       int c=0;
+       boolean a=true;
+       for (int i=0;i<s.length();i++)
+       {
+           if (s.charAt(i)=='x' && a) c++;
+           else
+           {
+               a=false;
+               c--;
+               if (c==0) a=true;
+           }
+       }
+       if (c==0) System.out.println("1");
+       else System.out.println("0");
+
+    }
+}
