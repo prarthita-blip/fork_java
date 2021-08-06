@@ -1,0 +1,25 @@
+https://practice.geeksforgeeks.org/problems/sum-the-common-elements/1/?track=module-5-sets-and-map-java&batchId=114#
+
+
+class Geeks
+{
+    public static long commonSum(int arr1[], int arr2[])
+    {
+       //Your code here
+HashSet<Integer> hs1=new HashSet<>();
+HashSet<Integer> hs2=new HashSet<>();
+for(int x:arr1)
+hs1.add(x);
+
+for(int x:arr2)
+hs2.add(x);
+
+long sum=0;
+for(int x:hs2)
+if(!hs1.add(x))
+sum+=x;
+
+return sum;
+
+    }
+}
