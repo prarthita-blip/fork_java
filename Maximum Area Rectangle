@@ -1,0 +1,20 @@
+https://practice.geeksforgeeks.org/problems/maximum-area-rectangle/1/?track=module-3-classes%20and-biginteger-java&batchId=114
+
+
+class maxArea{
+    
+    static int calculate_Area(Rectangle arr[]){
+        
+        // Your code here
+        int max=Integer.MIN_VALUE;
+        
+        for (int i=0;i<arr.length;i++)
+        {
+            max=Math.max(max,arr[i].area());
+        }
+        return max;
+        
+        
+    }
+    
+}
