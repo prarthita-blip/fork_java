@@ -1,0 +1,11 @@
+https://practice.geeksforgeeks.org/problems/biginteger-mod/1/?track=module-3-classes%20and-biginteger-java&batchId=114
+
+
+class MathematicalOperation{
+    
+    static BigInteger mod(BigInteger x, BigInteger y){
+        // Your code here 
+        return y.mod(x);
+    }
+    
+}
