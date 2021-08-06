@@ -1,0 +1,23 @@
+https://practice.geeksforgeeks.org/problems/queue-operations/1/?track=module-4-stacks-queues-and-lists-java&batchId=114#
+
+
+class Geeks{
+    
+    // Function to insert element into the queue
+    static void insert(Queue<Integer> q, int k){
+        
+        // Your code here
+          q.offer(k);
+        
+    }
+    
+    // Function to find frequency of an element
+    // rteturn the frequency of k
+    static int findFrequency(Queue<Integer> q, int k){
+        
+        // Your code here
+        return Collections.frequency(q, k);
+        
+    }
+    
+}
