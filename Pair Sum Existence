@@ -1,0 +1,22 @@
+https://practice.geeksforgeeks.org/problems/pair-sum-existence/1/?track=module-5-sets-and-map-java&batchId=114#
+
+
+class Geeks
+{
+public static int sumExists(int arr[], int n, int sum)
+{
+// add your code here
+Arrays.sort(arr,0,n);
+int i=0;
+int j=arr.length-1;
+while(i<j){ 
+    if(arr[i]+arr[j]==sum)
+    return 1;
+    if(arr[i]+arr[j]>sum)
+    j--;
+    else
+    i++;
+}
+return 0;
+}
+}
