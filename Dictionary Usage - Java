@@ -1,0 +1,27 @@
+https://practice.geeksforgeeks.org/problems/dictionary-usage-java/1/?track=module-6-misc-java%20&batchId=114
+
+
+class Geeks
+{
+    
+    // print the word corresponding to page 
+    // number pg
+    @SuppressWarnings("unchecked")
+    public static void Dictionary(int pages[], String words[], int pg)
+    {
+        // Your code here
+        int flag=0;
+        for (int i=0;i<pages.length; i++)
+        {
+            if (pages[i]==pg)
+            {
+            System.out.println(words[i]);
+            flag=1;
+            break;
+            }
+        }
+        
+        if (flag==0)
+        System.out.println("null");
+    }
+}
