@@ -1,0 +1,13 @@
+https://practice.geeksforgeeks.org/problems/using-calendar-java/1/?track=module-6-misc-java%20&batchId=114
+
+
+class Geeks
+{
+    public static void timeBeforeAfterNdays(int d,int m,int y,int n)
+    {
+        Calendar c = Calendar.getInstance();
+        c.set(y, m-1, d);
+        c.add(Calendar.DATE, n);
+        System.out.println("day after n days: " + c.get(Calendar.DAY_OF_WEEK));
+    }
+}
