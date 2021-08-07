@@ -1,0 +1,21 @@
+https://practice.geeksforgeeks.org/problems/pair-sum-existence-revisited/1/?track=module-5-sets-and-map-java&batchId=114
+
+
+class Geeks
+{
+    // function to check if any pair having specified sum
+    // and return 1 if so, else 0
+    public static int sumExists(int arr[], int n, int sum)
+{
+Map<Integer, Integer>map = new HashMap<Integer, Integer>();
+
+for(int i = 0; i < n;i++) {
+if(map.get(sum-arr[i]) != null) {
+return 1;
+}
+map.put(arr[i], i);
+}
+return 0;
+}
+    
+}
