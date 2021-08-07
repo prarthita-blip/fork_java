@@ -1,0 +1,26 @@
+https://practice.geeksforgeeks.org/problems/frequency-game/1/?track=module-5-sets-and-map-java&batchId=114
+
+
+class Geeks
+{
+    // Function to find largest number with minimum frequency
+    public static int LargButMinFreq(int arr[], int n)
+{
+// Your code here
+
+Map<Integer,Integer> mp = new HashMap<>();
+
+for(int i:arr) mp.put(i,mp.getOrDefault(i,0)+1);
+
+int max = Integer.MIN_VALUE;
+int freq = Integer.MAX_VALUE;
+
+for(int i:arr){
+if(i>=max && freq>=mp.get(i)){
+max = i;
+freq = mp.get(i);
+}
+}
+return max;
+}
+}
