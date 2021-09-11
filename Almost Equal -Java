@@ -18,7 +18,7 @@ int index = (int)(ch) - 97;
 ascii[index]--;
 }
 for (int val: ascii) {
-sum += Math.abs(val);
+sum +=Math.abs(val);
 }
 return sum;
 
